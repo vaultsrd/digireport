@@ -1015,7 +1015,7 @@ tbody tr:nth-child(even) > td:not(.total-num):not(.total-label){background-color
         }
         .gbk-pivot-modern thead th {
             padding: 7px 9px !important;
-            background: #435ebe !important;
+            background: #e85b5b !important;
             color: #ffffff !important;
             font-size: 15px !important;
             font-weight: 700 !important;
@@ -1027,7 +1027,7 @@ tbody tr:nth-child(even) > td:not(.total-num):not(.total-label){background-color
         .gbk-pivot-modern thead th,
         .gbk-pivot-modern thead th:first-child,
         .gbk-pivot-modern thead th:last-child {
-            background: #435ebe !important;
+            background: #e85b5b !important;
             color: #ffffff !important;
             -webkit-text-fill-color: #ffffff !important;
         }
@@ -1084,7 +1084,7 @@ tbody tr:nth-child(even) > td:not(.total-num):not(.total-label){background-color
         }
         .gbk-pivot-modern tfoot td {
             padding: 7px 9px !important;
-            background: #435ebe !important;
+            background: #e85b5b !important;
             color: #ffffff !important;
             font-size: 15px !important;
             font-weight: 700 !important;
@@ -1096,7 +1096,7 @@ tbody tr:nth-child(even) > td:not(.total-num):not(.total-label){background-color
         .gbk-pivot-modern tfoot td,
         .gbk-pivot-modern tfoot td:first-child,
         .gbk-pivot-modern tfoot td:last-child {
-            background: #435ebe !important;
+            background: #e85b5b !important;
             color: #ffffff !important;
             -webkit-text-fill-color: #ffffff !important;
         }
@@ -1126,7 +1126,7 @@ tbody tr:nth-child(even) > td:not(.total-num):not(.total-label){background-color
         }
         .gbk-pivot-modern tfoot .bg-slate-100,
         .gbk-pivot-modern tfoot .bg-blue-100 {
-            background: #435ebe !important;
+            background: #e85b5b !important;
         }
 
         .pivot-style-switch {
@@ -1158,11 +1158,32 @@ tbody tr:nth-child(even) > td:not(.total-num):not(.total-label){background-color
             background: #f8fafc;
         }
         .pivot-style-btn.active {
-            background: #435ebe;
-            border-color: #435ebe;
+            background: #e85b5b;
+            border-color: #e85b5b;
             color: #ffffff;
         }
-    &lt;/style&gt;
+    
+        /* Reference image palette: red header/total, neutral grey Team Leader column. */
+        .gbk-pivot-modern tbody tr > td:first-child,
+        .gbk-pivot-modern tbody tr:nth-child(odd) > td:first-child,
+        .gbk-pivot-modern tbody tr:hover > td:first-child {
+            background: #d9d9d9 !important;
+            background-color: #d9d9d9 !important;
+            color: #111111 !important;
+            -webkit-text-fill-color: #111111 !important;
+        }
+        .gbk-pivot-modern tbody tr:nth-child(even) > td:first-child {
+            background: #eeeeee !important;
+            background-color: #eeeeee !important;
+        }
+        .gbk-pivot-modern tfoot td,
+        .gbk-pivot-modern tfoot td:first-child,
+        .gbk-pivot-modern tfoot td:last-child {
+            background: #e85b5b !important;
+            color: #ffffff !important;
+            -webkit-text-fill-color: #ffffff !important;
+        }
+&lt;/style&gt;
 
 &lt;style id=&quot;spa-hide-legacy-nav&quot;&gt;
 /* SPA shell owns navigation; hide the legacy app navigation to prevent overlap. */
@@ -1246,6 +1267,21 @@ table tfoot td {
 }
 &lt;/style&gt;
 
+&lt;style id=&quot;gbk-pivot-modern-style-inner&quot;&gt;
+/* Modern table styling for the embedded Report GBK - TL iframe. */
+#pivotTable.gbk-pivot-modern { width:100% !important; min-width:760px !important; border-collapse:collapse !important; border-spacing:0 !important; background:#fff !important; font-family:Arial,Helvetica,sans-serif !important; border:1px solid #d8d8d8 !important; table-layout:auto !important; }
+#pivotTable.gbk-pivot-modern thead th { background:#e85b5b !important; color:#fff !important; -webkit-text-fill-color:#fff !important; font-size:15px !important; font-weight:700 !important; text-align:center !important; border:1px dotted rgba(255,255,255,.72) !important; white-space:nowrap !important; padding:7px 9px !important; }
+#pivotTable.gbk-pivot-modern thead th:first-child { text-align:left !important; min-width:155px !important; }
+#pivotTable.gbk-pivot-modern tbody td { color:#111 !important; font-size:15px !important; font-weight:500 !important; text-align:center !important; border-right:1px dotted #c9c9c9 !important; border-bottom:1px dotted #c9c9c9 !important; white-space:nowrap !important; padding:6px 9px !important; background:#fff !important; }
+#pivotTable.gbk-pivot-modern tbody tr:nth-child(even) > td { background:#f2f2f2 !important; }
+#pivotTable.gbk-pivot-modern tbody td:first-child { text-align:left !important; min-width:155px !important; font-weight:700 !important; background:#d9d9d9 !important; color:#111 !important; -webkit-text-fill-color:#111 !important; }
+#pivotTable.gbk-pivot-modern tbody tr:nth-child(even) > td:first-child { background:#eeeeee !important; }
+#pivotTable.gbk-pivot-modern tbody td:last-child { background:#e5e5e5 !important; color:#111 !important; font-weight:700 !important; }
+#pivotTable.gbk-pivot-modern tbody tr:nth-child(even) > td:last-child { background:#d9d9d9 !important; }
+#pivotTable.gbk-pivot-modern tfoot td { background:#e85b5b !important; color:#fff !important; -webkit-text-fill-color:#fff !important; font-size:15px !important; font-weight:700 !important; text-align:center !important; border-right:1px dotted rgba(255,255,255,.72) !important; border-bottom:0 !important; white-space:nowrap !important; padding:7px 9px !important; }
+#pivotTable.gbk-pivot-modern tfoot td:first-child { text-align:left !important; }
+#pivotTable.gbk-pivot-modern thead th *, #pivotTable.gbk-pivot-modern tfoot td * { color:#fff !important; -webkit-text-fill-color:#fff !important; }
+&lt;/style&gt;
 &lt;/head&gt;
 &lt;body class=&quot;min-h-screen flex flex-col lg:flex-row&quot;&gt;
 
@@ -1433,7 +1469,7 @@ table tfoot td {
                     &lt;div class=&quot;flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pb-4 border-b border-dashmin-border&quot;&gt;
                         &lt;h2 class=&quot;text-base font-bold text-slate-800 flex items-center gap-2.5&quot;&gt;
                             &lt;span class=&quot;w-7 h-7 rounded-lg bg-dashmin-primary/10 text-dashmin-primary flex items-center justify-center text-xs font-bold&quot;&gt;2&lt;/span&gt;
-                            &lt;span&gt;Filter &amp; Pencarian Data&lt;/span&gt;
+                            &lt;span&gt;Filter &amp; Pencarian Data Untuk PCV&lt;/span&gt;
                         &lt;/h2&gt;
                         &lt;div class=&quot;flex flex-wrap items-center gap-2.5 w-full md:w-auto&quot;&gt;
                             &lt;!-- Tombol Copy Khusus (order_id, wok, team leader) --&gt;
@@ -1870,22 +1906,37 @@ table tfoot td {
         const bulanIndo = [&quot;JANUARI&quot;, &quot;FEBRUARI&quot;, &quot;MARET&quot;, &quot;APRIL&quot;, &quot;MEI&quot;, &quot;JUNI&quot;, &quot;JULI&quot;, &quot;AGUSTUS&quot;, &quot;SEPTEMBER&quot;, &quot;OKTOBER&quot;, &quot;NOVEMBER&quot;, &quot;DESEMBER&quot;];
 
         function updatePivotTitle() {
-            // Ambil teks dari filter WOK yang sedang dipilih
-            let wokText = filterWok.options[filterWok.selectedIndex]?.text || &quot;AGENCY: SEMUA&quot;;
-            wokText = wokText.replace(&quot;Agency: &quot;, &quot;&quot;).replace(&quot;AGENCY: &quot;, &quot;&quot;).toUpperCase();
-            if (wokText === &quot;SEMUA&quot; || wokText === &quot;&quot;) wokText = &quot;SEMUA AGENCY&quot;;
+            // Ambil nama perusahaan dari filter WOK yang sedang dipilih.
+            const selectedCompanyText = String(
+                filterWok.options[filterWok.selectedIndex]?.text || &quot;AGENCY: SEMUA&quot;
+            ).trim();
+            const companyName = selectedCompanyText
+                .replace(/^Agency:\s*/i, &quot;&quot;)
+                .replace(/^AGENCY:\s*/i, &quot;&quot;)
+                .trim();
+            const normalizedCompany = companyName.toUpperCase();
 
-            // Format tanggal hari ini (Format: DD MMMM YYYY)
+            // Ubah nama perusahaan menjadi kota sesuai pemetaan yang diminta.
+            let wokText = normalizedCompany;
+            if (normalizedCompany === &quot;PT. RAJAWALI CELLULAR INDONESIA&quot;) {
+                wokText = &quot;KOTA BANDUNG&quot;;
+            } else if (normalizedCompany === &quot;PT. BERKAH KARUNIA KREASI&quot;) {
+                wokText = &quot;CIANJUR&quot;;
+            } else if (normalizedCompany === &quot;SEMUA&quot; || normalizedCompany === &quot;&quot;) {
+                wokText = &quot;SEMUA AGENCY&quot;;
+            }
+
+            // Format tanggal hari ini (Format: DD MMMM YYYY).
             const today = new Date();
             const dd = today.getDate();
             const mm = bulanIndo[today.getMonth()];
             const yyyy = today.getFullYear();
             const dateText = `${dd} ${mm} ${yyyy}`;
 
-            // Ambil nilai jam dari input
+            // Pertahankan jam dari input waktu yang sudah ada.
             const timeText = inputJamPivot.value || &quot;21:00&quot;;
 
-            // Gabungkan ke elemen header
+            // Gabungkan ke elemen header.
             pivotTitle.textContent = `IO AGENCY ${wokText} ${dateText} PUKUL ${timeText}`;
         }
 
@@ -2202,7 +2253,7 @@ table tfoot td {
             if (filteredPivotData.length === 0 || stoCoList.length === 0) {
                 pivotHeader.innerHTML = `
                     &lt;tr&gt;
-                        &lt;th class=&quot;px-3 py-2 w-44 min-w-[180px]&quot; style=&quot;${modern ? 'background:#435ebe !important;color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;border:1px dotted rgba(255,255,255,.72) !important;font-size:15px !important;font-weight:700 !important;' : 'background:#e2e8f0;color:#1e293b;border:1px solid #cbd5e1;'}&quot;&gt;
+                        &lt;th class=&quot;px-3 py-2 w-44 min-w-[180px]&quot; style=&quot;${modern ? 'background:#e85b5b !important;color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;border:1px dotted rgba(255,255,255,.72) !important;font-size:15px !important;font-weight:700 !important;' : 'background:#e2e8f0;color:#1e293b;border:1px solid #cbd5e1;'}&quot;&gt;
                         &lt;div class=&quot;flex items-center justify-between gap-2 w-full&quot;&gt;
                             &lt;span class=&quot;font-semibold ${modern ? 'text-[15px]' : 'text-[11px]'}&quot;&gt;Team Leader&lt;/span&gt;
                             ${getTeamLeaderFilterButton('pivot', selectedTlPivot)}
@@ -2236,16 +2287,16 @@ table tfoot td {
 
             pivotHeader.innerHTML = `
                 &lt;tr&gt;
-                    &lt;th class=&quot;px-3 py-2 w-44 min-w-[180px]&quot; style=&quot;${modern ? 'background:#435ebe !important;color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;border:1px dotted rgba(255,255,255,.72) !important;font-size:15px !important;font-weight:700 !important;' : 'background:#e2e8f0;color:#1e293b;border:1px solid #cbd5e1;'}&quot;&gt;
+                    &lt;th class=&quot;px-3 py-2 w-44 min-w-[180px]&quot; style=&quot;${modern ? 'background:#e85b5b !important;color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;border:1px dotted rgba(255,255,255,.72) !important;font-size:15px !important;font-weight:700 !important;' : 'background:#e2e8f0;color:#1e293b;border:1px solid #cbd5e1;'}&quot;&gt;
                         &lt;div class=&quot;flex items-center justify-between gap-2 w-full&quot;&gt;
                             &lt;span class=&quot;font-semibold ${modern ? 'text-[15px]' : 'text-[11px]'}&quot;&gt;Team Leader&lt;/span&gt;
                             ${getTeamLeaderFilterButton('pivot', selectedTlPivot)}
                         &lt;/div&gt;
                     &lt;/th&gt;
                     ${stoCoList.map(s =&gt; modern
-                        ? `&lt;th class=&quot;px-4 py-3 text-center&quot; style=&quot;background:#435ebe !important;color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;border:1px dotted rgba(255,255,255,.72) !important;font-size:15px !important;font-weight:700 !important;&quot;&gt;${s}&lt;/th&gt;`
+                        ? `&lt;th class=&quot;px-4 py-3 text-center&quot; style=&quot;background:#e85b5b !important;color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;border:1px dotted rgba(255,255,255,.72) !important;font-size:15px !important;font-weight:700 !important;&quot;&gt;${s}&lt;/th&gt;`
                         : `&lt;th class=&quot;px-4 py-3 text-center border border-slate-300 bg-slate-100&quot;&gt;${s}&lt;/th&gt;`).join('')}
-                    &lt;th class=&quot;px-4 py-3 text-center&quot; style=&quot;${modern ? 'background:#435ebe !important;color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;border:1px dotted rgba(255,255,255,.72) !important;font-size:15px !important;font-weight:700 !important;' : 'background:#dbeafe;color:#1e3a8a;border:1px solid #bfdbfe;'}&quot;&gt;${modern ? 'Grand Total' : 'Total Baris'}&lt;/th&gt;
+                    &lt;th class=&quot;px-4 py-3 text-center&quot; style=&quot;${modern ? 'background:#e85b5b !important;color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;border:1px dotted rgba(255,255,255,.72) !important;font-size:15px !important;font-weight:700 !important;' : 'background:#dbeafe;color:#1e3a8a;border:1px solid #bfdbfe;'}&quot;&gt;${modern ? 'Grand Total' : 'Total Baris'}&lt;/th&gt;
                 &lt;/tr&gt;
             `;
 
