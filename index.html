@@ -2853,6 +2853,53 @@ table tfoot td {
         }
         .table thead.sticky-top { position: sticky; top: 0; z-index: 5; }
 
+        /* PCA/PCV/PP: gaya tabel merah sesuai referensi, tanpa mengubah JavaScript */
+        #table2-section .table,
+        #table3-section .table,
+        #table4-section .table {
+            min-width: 850px;
+            table-layout: auto;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            background: #fff;
+        }
+        #table2-section .table thead th,
+        #table3-section .table thead th,
+        #table4-section .table thead th {
+            background: #c94f4f !important;
+            color: #fff !important;
+            font-size: 15px !important;
+            font-weight: 700;
+            text-transform: none;
+            letter-spacing: 0;
+            padding: 5px 4px !important;
+            border: 1px solid #fff;
+            white-space: nowrap;
+        }
+        #table2-section .table tbody td,
+        #table3-section .table tbody td,
+        #table4-section .table tbody td {
+            color: #111827;
+            font-size: 15px !important;
+            padding: 3px 4px !important;
+            border: 0;
+            border-bottom: 1px solid #f2c8c4;
+            white-space: nowrap;
+            overflow: visible;
+            text-overflow: clip;
+        }
+        #table2-section .table tbody tr:nth-child(even) td,
+        #table3-section .table tbody tr:nth-child(even) td,
+        #table4-section .table tbody tr:nth-child(even) td { background: #f3dedd !important; }
+        #table2-section .table tbody tr:nth-child(odd) td,
+        #table3-section .table tbody tr:nth-child(odd) td,
+        #table4-section .table tbody tr:nth-child(odd) td { background: #fff !important; }
+        #table2-section .table tbody tr:hover td,
+        #table3-section .table tbody tr:hover td,
+        #table4-section .table tbody tr:hover td { background: #f8e9e7 !important; }
+
+
         .th-content-wrapper {
             display: flex;
             align-items: center;
@@ -3951,6 +3998,55 @@ table tfoot td {
                 stickyHead.classList.remove('sticky-top');
                 stickyHead.style.position = 'static';
             }
+
+            // Terapkan style langsung pada clone agar gambar hasil salin sama
+            // dengan tampilan terbaru, walaupun clone berada di luar section.
+            clonedTable.style.width = tableEl.offsetWidth + 'px';
+            clonedTable.style.minWidth = '850px';
+            clonedTable.style.tableLayout = 'auto';
+            clonedTable.style.borderCollapse = 'collapse';
+            clonedTable.style.fontFamily = 'Arial, Helvetica, sans-serif';
+            clonedTable.style.fontSize = '15px';
+            clonedTable.style.backgroundColor = '#ffffff';
+            clonedTable.querySelectorAll('th, td').forEach(function(cell) {
+                cell.style.setProperty('vertical-align', 'middle', 'important');
+                cell.style.setProperty('box-sizing', 'border-box', 'important');
+                cell.style.setProperty('font-size', '15px', 'important');
+                cell.style.setProperty('line-height', '19px', 'important');
+            });
+            clonedTable.querySelectorAll('thead th').forEach(function(th) {
+                th.style.setProperty('background-color', '#c94f4f', 'important');
+                th.style.setProperty('color', '#ffffff', 'important');
+                th.style.setProperty('font-size', '15px', 'important');
+                th.style.setProperty('font-weight', '700', 'important');
+                th.style.setProperty('text-transform', 'none', 'important');
+                th.style.setProperty('letter-spacing', '0', 'important');
+                th.style.setProperty('padding', '6px 7px', 'important');
+                th.style.setProperty('height', '36px', 'important');
+                th.style.setProperty('line-height', '20px', 'important');
+                th.style.setProperty('vertical-align', 'middle', 'important');
+                th.style.setProperty('text-align', 'left', 'important');
+                th.style.setProperty('border', '1px solid #ffffff', 'important');
+                th.style.setProperty('white-space', 'nowrap', 'important');
+                th.style.setProperty('box-sizing', 'border-box', 'important');
+            });
+            clonedTable.querySelectorAll('tbody tr').forEach(function(row, rowIndex) {
+                row.querySelectorAll('td').forEach(function(td) {
+                    td.style.setProperty('font-family', 'Arial, Helvetica, sans-serif', 'important');
+                    td.style.setProperty('font-size', '15px', 'important');
+                    td.style.setProperty('color', '#111827', 'important');
+                    td.style.setProperty('padding', '4px 7px', 'important');
+                    td.style.setProperty('height', '27px', 'important');
+                    td.style.setProperty('line-height', '19px', 'important');
+                    td.style.setProperty('vertical-align', 'middle', 'important');
+                    td.style.setProperty('border-bottom', '1px solid #f2c8c4', 'important');
+                    td.style.setProperty('box-sizing', 'border-box', 'important');
+                    td.style.setProperty('white-space', 'nowrap', 'important');
+                    td.style.setProperty('overflow', 'visible', 'important');
+                    td.style.setProperty('text-overflow', 'clip', 'important');
+                    td.style.setProperty('background-color', rowIndex % 2 === 1 ? '#f3dedd' : '#ffffff', 'important');
+                });
+            });
 
             cloneContainer.appendChild(clonedTable);
             document.body.appendChild(cloneContainer);
