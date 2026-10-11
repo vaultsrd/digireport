@@ -5233,7 +5233,7 @@ table tfoot td {
         document.getElementById(&#x27;pivotCompanySelectionInfo&#x27;).textContent = `${selectedCount} dari ${companies.length} perusahaan dipilih. Pilih dua jika hanya ingin menampilkan dua perusahaan.`;
     }
     function escapePivotText(value) {
-        return String(value ?? &#x27;&#x27;).replace(/[&amp;&lt;&gt;"']/g, ch =&gt; ({'&':'&amp;amp;','<':'&amp;lt;','>':'&amp;gt;','"':'&amp;quot;',"'":'&amp;#39;'}[ch]));
+        return String(value ?? &#x27;&#x27;).replace(/[&amp;&lt;&gt;&quot;']/g, ch =&gt; ({'&':'&amp;amp;','<':'&amp;lt;','>':'&amp;gt;','&quot;':'&amp;quot;',&quot;'&quot;:'&amp;#39;'}[ch]));
     }
     function togglePivotCompany(name, checked) {
         if (pivotCompanySelections === null) pivotCompanySelections = new Set();
