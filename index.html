@@ -417,6 +417,156 @@ tbody tr:nth-child(even) > td:not(.total-num):not(.total-label){background-color
     border-left-color:#918be0 !important;
 }
 
+
+/* ===== PANDUAN PENGGUNAAN ===== */
+.guide-page{padding:26px 28px 44px;max-width:1500px;margin:0 auto;width:100%;color:var(--text)}
+.guide-hero{position:relative;overflow:hidden;border-radius:22px;padding:30px 32px;background:linear-gradient(125deg,#142c66 0%,#2457a7 48%,#6b83f4 100%);color:#fff;box-shadow:0 14px 35px rgba(36,87,167,.22);margin-bottom:22px}
+.guide-hero:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-70px;top:-115px;border:38px solid rgba(255,255,255,.09);pointer-events:none}
+.guide-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;color:#dbeafe;background:rgba(255,255,255,.13);padding:7px 11px;border-radius:999px}
+.guide-hero h1{font-size:clamp(26px,3vw,38px);line-height:1.15;margin:16px 0 10px;color:#fff;letter-spacing:-.6px}
+.guide-hero p{max-width:740px;line-height:1.7;color:#e7efff;margin:0;font-size:14px}
+.guide-hero-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.guide-hero-tags span{font-size:12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.1);padding:7px 10px;border-radius:9px}
+.guide-search-wrap{margin:-2px 0 22px;display:flex;gap:10px;align-items:center;background:var(--card-bg);border:1px solid var(--line);padding:10px 14px;border-radius:14px;box-shadow:var(--shadow)}
+.guide-search-wrap svg{width:20px;height:20px;color:var(--muted);flex-shrink:0}.guide-search{border:0;outline:0;background:transparent;color:var(--text);width:100%;font:inherit;font-size:14px}.guide-search::placeholder{color:var(--muted)}
+.guide-section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:26px 0 14px}.guide-section-head h2{font-size:20px;color:var(--text-strong);margin:0}.guide-section-head p{font-size:12px;color:var(--muted);margin:5px 0 0}
+.guide-quick-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-bottom:25px}
+.guide-quick{background:var(--card-bg);border:1px solid var(--line);border-radius:15px;padding:17px 16px;cursor:pointer;transition:transform .18s,border-color .18s,box-shadow .18s;min-height:145px;text-align:left;color:var(--text);display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow)}
+.guide-quick:hover{transform:translateY(-3px);border-color:#7c9cff;box-shadow:0 10px 22px rgba(36,87,167,.12)}.guide-quick-icon{height:40px;width:40px;border-radius:12px;display:grid;place-items:center;background:#eaf0ff;color:#3158bb}.guide-quick-icon svg{width:21px;height:21px}.guide-quick strong{font-size:13px;color:var(--text-strong)}.guide-quick small{font-size:11px;line-height:1.55;color:var(--muted)}
+.guide-block{background:var(--card-bg);border:1px solid var(--line);border-radius:17px;padding:22px;margin:14px 0;box-shadow:var(--shadow);scroll-margin-top:90px}.guide-block[hidden],.guide-quick[hidden]{display:none!important}.guide-highlight{outline:2px solid #8ba8ff;outline-offset:3px;transition:outline-color .4s}.guide-block-title{display:flex;gap:13px;align-items:flex-start;margin-bottom:14px}.guide-number{height:38px;width:38px;display:grid;place-items:center;border-radius:12px;background:#eaf0ff;color:#3158bb;font-weight:800;flex-shrink:0}.guide-block h3{margin:1px 0 5px;font-size:17px;color:var(--text-strong)}.guide-block-title p{margin:0;color:var(--muted);font-size:12px;line-height:1.6}.guide-block p,.guide-block li{font-size:13px;line-height:1.75;color:var(--text)}.guide-block ul,.guide-block ol{padding-left:21px;margin:9px 0}.guide-block li{padding-left:3px;margin:4px 0}.guide-callout{padding:12px 14px;border-radius:11px;background:var(--sidebar-hover);border-left:3px solid #5275d8;margin-top:13px;font-size:12px;line-height:1.7;color:var(--text)}.guide-callout strong{color:var(--text-strong)}
+.guide-two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.guide-mini{border:1px solid var(--line);border-radius:12px;padding:15px;background:var(--bg)}.guide-mini h4{margin:0 0 6px;font-size:13px;color:var(--text-strong)}.guide-mini p{margin:0;font-size:12px}.guide-chip{display:inline-block;padding:4px 8px;background:var(--sidebar-hover);border-radius:7px;font-size:11px;color:var(--text);margin:3px 4px 3px 0}
+.guide-faq details{border-top:1px solid var(--line);padding:13px 0}.guide-faq details:first-child{border-top:0}.guide-faq summary{cursor:pointer;font-weight:650;color:var(--text-strong);font-size:13px}.guide-faq details p{margin:9px 0 0;color:var(--muted)}.guide-empty{display:none;padding:24px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}.guide-empty.show{display:block}.guide-end{border-radius:15px;padding:18px 20px;background:var(--sidebar-hover);display:flex;gap:12px;align-items:flex-start;margin-top:20px}.guide-end svg{color:#5275d8;flex-shrink:0}.guide-end strong{font-size:13px;color:var(--text-strong)}.guide-end p{font-size:12px;line-height:1.7;margin:4px 0 0;color:var(--muted)}
+@media(max-width:1100px){.guide-quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.guide-page{padding:16px 13px 30px}.guide-hero{padding:23px 20px;border-radius:17px}.guide-quick-grid,.guide-two-col{grid-template-columns:1fr}.guide-quick{min-height:auto}.guide-block{padding:17px}.guide-section-head{align-items:flex-start;flex-direction:column}}
+
+  
+
+/* ===== REFINEMENT: SIDEBAR TOGGLE + READABLE TYPOGRAPHY ===== */
+:root{
+  --primary:#3659b8;
+  --primary-dark:#29489d;
+  --sidebar-active:#3659b8;
+  --text:#263653;
+  --muted:#65738d;
+  --muted-2:#78869e;
+  --line:#d9e1ef;
+}
+body{font-size:15px;line-height:1.55}
+#sidebar{width:272px}
+#main-wrap{margin-left:272px}
+.sidebar-header{padding:23px 24px}
+.sidebar-brand{font-size:20px}
+.menu-title{font-size:11.5px!important;letter-spacing:1px!important}
+.menu-item{font-size:14.5px;line-height:1.45;padding:12px 17px;margin:3px 10px;gap:12px}
+.menu-item svg{width:20px;height:20px}
+.sidebar-footer{font-size:12px;line-height:1.5}
+.topbar-toggle{width:42px;height:42px;justify-content:center;border:1px solid var(--line);background:var(--card-bg);box-shadow:var(--shadow);transition:background .18s,border-color .18s,transform .18s}
+.topbar-toggle:hover{background:var(--primary-light);border-color:#b9c9f4}
+.topbar-toggle:focus-visible,.menu-item:focus-visible,.guide-quick:focus-visible{outline:3px solid #8ba8ff;outline-offset:2px}
+.topbar-title{font-size:18px}
+label,.form-label{font-size:13px}
+input,select,textarea{font-size:14px}
+/* The guide is intentionally more spacious and readable than compact dashboard controls. */
+.guide-page{font-size:15px}
+.guide-hero{padding:34px 36px}
+.guide-hero h1{font-size:clamp(29px,3vw,40px);line-height:1.2}
+.guide-hero p{font-size:15.5px;line-height:1.8}
+.guide-eyebrow{font-size:12px;letter-spacing:1.25px}
+.guide-hero-tags span{font-size:13px;padding:8px 11px}
+.guide-search{font-size:15px}
+.guide-section-head h2{font-size:22px}
+.guide-section-head p{font-size:13.5px;line-height:1.65}
+.guide-quick{padding:19px 18px;min-height:154px;gap:11px}
+.guide-quick strong{font-size:14.5px;line-height:1.45}
+.guide-quick small{font-size:12.5px;line-height:1.7}
+.guide-quick-icon{width:43px;height:43px}
+.guide-quick-icon svg{width:23px;height:23px}
+.guide-block{padding:25px}
+.guide-block h3{font-size:18px;line-height:1.4}
+.guide-block-title p{font-size:13.5px;line-height:1.7}
+.guide-block p,.guide-block li{font-size:14.5px;line-height:1.85}
+.guide-callout{font-size:13.5px;line-height:1.8;padding:14px 16px}
+.guide-mini{padding:17px}
+.guide-mini h4{font-size:14.5px}
+.guide-mini p{font-size:13.5px;line-height:1.75}
+.guide-chip{font-size:12px;padding:5px 9px}
+.guide-faq summary{font-size:14.5px;line-height:1.6}
+.guide-faq details p{font-size:14px;line-height:1.8}
+.guide-end strong{font-size:14.5px}
+.guide-end p{font-size:13.5px;line-height:1.8}
+[data-theme="dark"]{
+  --text:#e0e7f5;
+  --text-strong:#f4f7ff;
+  --muted:#a9b7d0;
+  --muted-2:#9aa8c0;
+  --line:#36435b;
+  --sidebar-active:#496bd0;
+}
+@media(min-width:1200px){
+  #sidebar{width:272px}
+  #main-wrap{margin-left:272px}
+  body.sidebar-open #sidebar{transform:translateX(-105%)}
+  body.sidebar-open #main-wrap{margin-left:0}
+  #sidebar,#main-wrap{transition:transform .28s ease,margin .28s ease}
+}
+@media(max-width:1199px){
+  #sidebar{width:286px;max-width:86vw}
+  #main-wrap{margin-left:0}
+  .topbar-toggle{width:44px;height:44px}
+}
+@media(max-width:640px){
+  .guide-hero{padding:24px 21px}
+  .guide-hero p{font-size:14.5px}
+  .guide-block{padding:18px}
+  .guide-block p,.guide-block li{font-size:14px}
+  .guide-quick strong{font-size:14px}
+  .guide-quick small{font-size:13px}
+}
+
+/* ===== SIDEBAR COLLAPSE + ACCORDION NAVIGATION ===== */
+.sidebar-collapse-toggle{width:42px;height:42px;flex:0 0 42px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:10px;background:var(--card-bg);color:var(--text);cursor:pointer;box-shadow:var(--shadow);transition:background .18s,border-color .18s,color .18s}
+.sidebar-collapse-toggle:hover{background:var(--sidebar-hover);border-color:#b9c9f4;color:var(--primary)}
+.sidebar-collapse-toggle:focus-visible,.sidebar-group-toggle:focus-visible{outline:3px solid #8ba8ff;outline-offset:2px}
+.sidebar-group{margin:0 0 7px}
+.sidebar-group-toggle{width:calc(100% - 24px);margin:14px 12px 7px;padding:9px 11px;display:flex;align-items:center;gap:10px;text-align:left;border:0;border-radius:8px;background:#f5f7fd;color:#6877a3;border-left:3px solid #435ebe;cursor:pointer;font:700 11px/1.45 'Poppins',sans-serif;letter-spacing:.65px;text-transform:uppercase;transition:background .18s,color .18s}
+.sidebar-group-toggle:hover{background:#eaf0ff;color:#3158bb}
+.sidebar-group-toggle .group-icon{width:17px;height:17px;flex:0 0 17px;display:inline-flex;align-items:center;justify-content:center}
+.sidebar-group-toggle .group-icon svg{width:17px;height:17px}
+.sidebar-group-toggle .group-label{flex:1;min-width:0}
+.sidebar-group-toggle .group-chevron{width:15px;height:15px;flex:0 0 15px;transition:transform .2s}
+.sidebar-group-toggle[aria-expanded="true"] .group-chevron{transform:rotate(180deg)}
+/* Animasi halus untuk lebar sidebar dan panel submenu */
+#sidebar{transition:width .32s cubic-bezier(.2,.75,.25,1),transform .28s ease,background .25s}
+#main-wrap{transition:margin-left .32s cubic-bezier(.2,.75,.25,1)}
+.topbar-toggle{transition:background .18s,border-color .18s,transform .22s}
+.topbar-toggle:active{transform:scale(.94)}
+.topbar-toggle .toggle-label{display:none!important}
+.sidebar-group-panel{display:block!important;overflow:hidden;max-height:0;opacity:0;visibility:hidden;pointer-events:none;transition:max-height .32s ease,opacity .22s ease,visibility .22s ease}
+.sidebar-group-panel:not([hidden]){max-height:1200px;opacity:1;visibility:visible;pointer-events:auto}
+.sidebar-group-panel[hidden]{display:block!important;max-height:0!important;opacity:0!important;visibility:hidden!important;pointer-events:none!important}
+.sidebar-group-toggle .group-chevron{transition:transform .28s cubic-bezier(.2,.75,.25,1)}
+.sidebar-group-toggle .group-icon{transition:transform .22s ease}
+.sidebar-group-toggle[aria-expanded="true"] .group-icon{transform:scale(1.04)}
+[data-theme="dark"] .sidebar-group-toggle{background:rgba(67,94,190,.12);color:#aebcf0;border-left-color:#6f8bff}
+[data-theme="dark"] .sidebar-group-toggle:hover{background:rgba(67,94,190,.22);color:#f4f7ff}
+@media(min-width:1200px){
+ body.sidebar-collapsed #sidebar{width:82px}
+ body.sidebar-collapsed #main-wrap{margin-left:82px}
+ body.sidebar-collapsed .sidebar-header{justify-content:center;padding:20px 8px}
+ body.sidebar-collapsed .sidebar-header>div:not(.sidebar-logo),body.sidebar-collapsed .sidebar-footer{display:none}
+ body.sidebar-collapsed .sidebar-logo{width:42px;height:42px}
+ body.sidebar-collapsed .sidebar-group-toggle{width:58px;margin:12px auto 6px;padding:10px 0;justify-content:center;border-left-width:0;border-radius:10px;background:transparent}
+ body.sidebar-collapsed .sidebar-group-toggle .group-label,body.sidebar-collapsed .sidebar-group-toggle .group-chevron{display:none}
+ body.sidebar-collapsed .sidebar-group-toggle .group-icon{width:22px;height:22px;flex-basis:22px}
+ body.sidebar-collapsed .sidebar-group-toggle .group-icon svg{width:21px;height:21px}
+ body.sidebar-collapsed .sidebar-group-panel{display:none!important}
+ body.sidebar-collapsed .menu-item{width:58px;min-height:46px;margin:4px auto;padding:12px 0;justify-content:center;gap:0}
+ body.sidebar-collapsed .menu-item>span,body.sidebar-collapsed .menu-item>.menu-label{display:none!important}
+ body.sidebar-collapsed .menu-item>svg,body.sidebar-collapsed .menu-item>i{width:21px;height:21px}
+ body.sidebar-collapsed #sidebar .sidebar-menu{padding-top:10px}
+ body.sidebar-collapsed #sidebar .sidebar-group{margin-bottom:4px}
+}
+@media(max-width:1199px){.sidebar-collapse-toggle{display:none}}
+
 </style>
 <base target="_blank"/>
 <base target="_blank"/>
@@ -426,6 +576,52 @@ tbody tr:nth-child(even) > td:not(.total-num):not(.total-label){background-color
 .report-page.active{display:block;}
 .report-frame{display:block;width:100%;height:calc(100vh - 112px);min-height:720px;border:0;background:#fff;border-radius:12px;box-shadow:var(--shadow);}
   </style>
+<style>
+/* Opsi A: satu kontrol sidebar untuk desktop dan mobile */
+.topbar-toggle{gap:10px;width:auto;min-width:168px;height:42px;padding:0 13px;justify-content:flex-start;border:1px solid var(--line);border-radius:10px;background:var(--card-bg);box-shadow:var(--shadow);font:600 13px/1.2 'Poppins',sans-serif;white-space:nowrap;}
+.topbar-toggle svg{flex:0 0 22px;}
+.topbar-toggle .toggle-label{display:inline;}
+.topbar-toggle:hover{background:var(--primary-light);border-color:#b9c9f4;}
+@media(min-width:1200px){
+ body.sidebar-collapsed #sidebar{transform:none!important;}
+ body.sidebar-collapsed #main-wrap{margin-left:82px!important;}
+ body.sidebar-collapsed .sidebar-group-panel:not([hidden]){display:block!important;}
+ body.sidebar-collapsed .sidebar-group-panel[hidden]{display:none!important;}
+ body:not(.sidebar-collapsed) #sidebar{transform:none!important;}
+ body:not(.sidebar-collapsed) #main-wrap{margin-left:272px!important;}
+ .sidebar-collapse-toggle{display:none!important;}
+}
+@media(max-width:1199px){
+ .topbar-toggle{min-width:0;width:auto;padding:0 12px;}
+ .topbar-toggle .toggle-label{display:inline;}
+ #sidebar{transform:translateX(-105%);}
+ body.sidebar-open #sidebar{transform:translateX(0);}
+ #main-wrap{margin-left:0!important;}
+ body.sidebar-open .sidebar-backdrop{opacity:1;pointer-events:auto;}
+}
+@media(max-width:480px){.topbar-toggle{gap:7px;padding:0 9px;font-size:12px}.topbar-toggle svg{width:20px;height:20px;flex-basis:20px}}
+</style>
+
+<style>
+/* Final UI refinements: icon-only control and animated sidebar/submenus */
+.topbar-toggle{width:44px!important;min-width:44px!important;height:44px!important;padding:0!important;gap:0!important;justify-content:center!important;}
+.topbar-toggle .toggle-label{display:none!important;}
+@media(max-width:1199px){.topbar-toggle{width:44px!important;min-width:44px!important;padding:0!important;justify-content:center!important;}}
+@media(min-width:1200px){
+  body.sidebar-collapsed #sidebar{width:82px!important;}
+  body:not(.sidebar-collapsed) #sidebar{width:260px!important;}
+  body.sidebar-collapsed #main-wrap{margin-left:82px!important;}
+  body:not(.sidebar-collapsed) #main-wrap{margin-left:272px!important;}
+  body.sidebar-collapsed .sidebar-group-panel{display:none!important;}
+}
+/* Preserve max-height/opacity transitions whenever the sidebar is expanded. */
+@media(min-width:1200px){body:not(.sidebar-collapsed) .sidebar-group-panel{display:block!important;}}
+.sidebar-group-panel{overflow:hidden;max-height:0;opacity:0;visibility:hidden;pointer-events:none;transition:max-height .32s ease,opacity .22s ease,visibility .22s ease;}
+.sidebar-group-panel:not([hidden]){display:block!important;max-height:1200px!important;opacity:1;visibility:visible;pointer-events:auto;}
+.sidebar-group-panel[hidden]{display:block!important;max-height:0!important;opacity:0!important;visibility:hidden!important;pointer-events:none!important;}
+@media(min-width:1200px){body.sidebar-collapsed .sidebar-group-panel,body.sidebar-collapsed .sidebar-group-panel[hidden]{display:none!important;}}
+@media(prefers-reduced-motion:reduce){#sidebar,#main-wrap,.sidebar-group-panel,.sidebar-group-toggle .group-chevron,.topbar-toggle{transition:none!important;}}
+</style>
 </head>
 <body>
 <!-- ===== SIDEBAR ===== -->
@@ -491,25 +687,26 @@ tbody tr:nth-child(even) > td:not(.total-num):not(.total-label){background-color
     </a>
 <div class="menu-title section-title-sore">2. REPORT (PAGI &amp; SORE)</div>
 <a class="menu-item" data-report="report-gbk" onclick="openReport('report-gbk',this)">
-<i data-lucide="clipboard-list">
-</i>
+<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4.5h6a1 1 0 0 0-1-1.5h-4a1 1 0 0 0-1 1.5Z"/><path d="M8.5 10h7M8.5 14h7M8.5 18h4"/></svg>
 <span>
       Report GBK - TL
      </span>
 </a>
 <a class="menu-item" data-report="report-pca" onclick="openReport('report-pca',this)">
-<i data-lucide="bar-chart-3">
-</i>
+<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
 <span>
       Report PCA PCV PP
      </span>
 </a>
 <a class="menu-item" data-report="report-ioreps" onclick="openReport('report-ioreps',this)">
-<i data-lucide="database">
-</i>
+<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8.5" ry="3"/><path d="M3.5 5v14c0 1.7 3.8 3 8.5 3s8.5-1.3 8.5-3V5M3.5 12c0 1.7 3.8 3 8.5 3s8.5-1.3 8.5-3"/></svg>
 <span>
       Report IO RE PS
      </span>
+</a>
+<div class="menu-title">Bantuan &amp; Panduan</div>
+<a class="menu-item" data-report="report-guide" onclick="openReport('report-guide',this)">
+<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><path d="M12 7v14M12 7C10.5 5.5 8.5 5 3 5v13c5.5 0 7.5.5 9 3M12 7c1.5-1.5 3.5-2 9-2v13c-5.5 0-7.5.5-9 3"/><path d="m15 11 1.5 1.5L20 9"/></svg><span>Panduan Penggunaan</span>
 </a>
 </div>
 <div class="sidebar-footer">
@@ -523,15 +720,9 @@ tbody tr:nth-child(even) > td:not(.total-num):not(.total-label){background-color
 <!-- ===== MAIN ===== -->
 <div id="main-wrap">
 <div class="topbar">
-<button class="topbar-toggle" onclick="toggleSidebar()" title="Menu">
-<svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24" width="22">
-<line x1="3" x2="21" y1="6" y2="6">
-</line>
-<line x1="3" x2="21" y1="12" y2="12">
-</line>
-<line x1="3" x2="21" y1="18" y2="18">
-</line>
-</svg>
+<button class="topbar-toggle" type="button" onclick="toggleSidebar()" title="Toggle sidebar" aria-label="Ciutkan sidebar" aria-expanded="true" aria-pressed="false">
+<svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24" width="22" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M9 4v16"></path><path d="m15 9-2 3 2 3"></path></svg>
+<span class="toggle-label" aria-hidden="true">Ciutkan sidebar</span>
 </button>
 <div>
 <div class="topbar-title">
@@ -5442,6 +5633,78 @@ table tfoot td {
 &lt;/html&gt;" title="Report IO RE PS">
 </iframe>
 </section>
+<section class="report-page" id="report-guide">
+<div class="guide-page">
+  <div class="guide-hero">
+    <div class="guide-eyebrow"><i data-lucide="sparkles" style="width:15px;height:15px"></i> PUSAT BANTUAN DIGIREPORT</div>
+    <h1>Panduan Penggunaan<br/>DigiReport</h1>
+    <p>Selamat datang! Pelajari cara menyiapkan file, menjalankan setiap laporan, membaca hasil, dan mengatasi kendala umum. Semua tutorial tersedia langsung di halaman ini—tidak perlu membuka PDF.</p>
+    <div class="guide-hero-tags"><span>✓ Langkah demi langkah</span><span>⌕ Bisa dicari</span><span>◈ Untuk 4 jenis laporan</span></div>
+  </div>
+  <div class="guide-search-wrap"><i data-lucide="search"></i><input id="guideSearch" class="guide-search" type="search" placeholder="Cari panduan, nama laporan, format file, atau kendala…" oninput="filterGuide(this.value)" aria-label="Cari isi panduan"/></div>
+  <div class="guide-section-head"><div><h2>Mulai dari bagian yang Anda butuhkan</h2><p>Pilih salah satu kartu untuk langsung menuju tutorial.</p></div></div>
+  <div class="guide-quick-grid" id="guideQuickGrid">
+    <button class="guide-quick" onclick="guideJump('guide-start')"><span class="guide-quick-icon"><i data-lucide="rocket"></i></span><strong>Mulai di Sini</strong><small>Kenali alur kerja dan persiapan sebelum memproses laporan.</small></button>
+    <button class="guide-quick" onclick="guideJump('guide-performansi')"><span class="guide-quick-icon"><i data-lucide="chart-no-axes-combined"></i></span><strong>Report Performansi (PAGI)</strong><small>Upload file, atur periode, lalu pahami KPI dan tabel TL.</small></button>
+    <button class="guide-quick" onclick="guideJump('guide-gbk')"><span class="guide-quick-icon"><i data-lucide="clipboard-list"></i></span><strong>Report GBK - TL</strong><small>Hubungkan data SF dengan Team Leader, filter, dan ekspor.</small></button>
+    <button class="guide-quick" onclick="guideJump('guide-pca')"><span class="guide-quick-icon"><i data-lucide="layers"></i></span><strong>Report PCA PCV PP</strong><small>Kelola kategori data dan rangkai gambar laporan.</small></button>
+    <button class="guide-quick" onclick="guideJump('guide-ioreps')"><span class="guide-quick-icon"><i data-lucide="database"></i></span><strong>Report IO RE PS</strong><small>Generate data serta pivot berdasarkan perusahaan dan SF.</small></button>
+    <button class="guide-quick" onclick="guideJump('guide-trouble')"><span class="guide-quick-icon"><i data-lucide="wrench"></i></span><strong>Solusi Kendala</strong><small>Periksa file, nama kolom, tombol proses, dan hasil kosong.</small></button>
+  </div>
+  <div class="guide-empty" id="guideEmpty">Tidak ada panduan yang cocok. Coba kata kunci lain, misalnya “CSV”, “Team Leader”, atau “filter”.</div>
+
+  <section class="guide-block" id="guide-start" data-guide-text="mulai persiapan alur kerja file excel csv lokal browser internet" >
+    <div class="guide-block-title"><span class="guide-number">01</span><div><h3>Sebelum Memulai</h3><p>Persiapan singkat agar proses laporan berjalan lancar.</p></div></div>
+    <div class="guide-two-col">
+      <div class="guide-mini"><h4>Siapkan file sumber</h4><p>Gunakan file sesuai menu laporan yang akan dijalankan. Pastikan file lengkap, tidak rusak, dan berasal dari periode yang benar.</p></div>
+      <div class="guide-mini"><h4>Periksa format</h4><p>Ikuti format yang diminta: file Team Leader biasanya Excel (.xlsx/.xls), sedangkan data transaksi biasanya CSV.</p></div>
+      <div class="guide-mini"><h4>Periksa kolom penting</h4><p>Jangan menghapus atau mengganti nama kolom kunci yang digunakan untuk pencocokan dan perhitungan.</p></div>
+      <div class="guide-mini"><h4>Gunakan browser terbaru</h4><p>Jika komponen atau pustaka tidak termuat, pastikan koneksi internet aktif lalu muat ulang halaman.</p></div>
+    </div>
+    <div class="guide-callout"><strong>Catatan privasi:</strong> pemrosesan file pada aplikasi ini dilakukan di browser. Tetap ikuti aturan perusahaan saat menangani data operasional.</div>
+    <p><strong>Alur kerja umum:</strong> buka menu laporan → pilih file yang sesuai → jalankan tombol proses/generate → periksa filter dan hasil → salin atau ekspor bila diperlukan.</p>
+  </section>
+
+  <section class="guide-block" id="guide-performansi" data-guide-text="report performansi pagi TeamLeader.xlsx bulan 1 bulan 2 periode filter KPI GMoM GAP produktivitas cluster tanggal" >
+    <div class="guide-block-title"><span class="guide-number">02</span><div><h3>Report Performansi (PAGI)</h3><p>Untuk membandingkan performansi antarbulan dan melihat hasil per Team Leader.</p></div></div>
+    <ol><li>Buka menu <strong>Report Performansi (PAGI)</strong> pada sidebar.</li><li>Pada bagian <strong>Upload Data</strong>, unggah file <strong>TeamLeader.xlsx</strong>, file transaksi <strong>Bulan 1</strong>, dan file transaksi <strong>Bulan 2</strong> pada kolom masing-masing.</li><li>Pastikan file Team Leader memiliki kolom <code>sf_code</code> dan <code>Team Leader</code>. Data transaksi perlu memuat informasi SF, Order Id, tanggal PS, serta WOK/Cluster sesuai struktur sumber aplikasi.</li><li>Buka <strong>Periode &amp; Filter</strong>. Pilih tanggal/periode yang ingin dibandingkan, lalu sesuaikan filter Cluster dan status jika tersedia.</li><li>Lihat bagian <strong>Performansi TL</strong> untuk ringkasan KPI dan perbandingan, lalu buka <strong>Detail Data Bulan</strong> untuk memeriksa data pendukung.</li></ol>
+    <div><span class="guide-chip">GMoM: pertumbuhan bulan ke bulan</span><span class="guide-chip">GAP: selisih Bulan 2 − Bulan 1</span><span class="guide-chip">Produktivitas: rasio hasil terhadap SF/hari sesuai rumus aplikasi</span></div>
+    <div class="guide-callout"><strong>Tips:</strong> gunakan rentang tanggal yang sebanding untuk kedua bulan. Jika hasil tampak tidak sesuai, periksa kembali file yang diunggah, tanggal transaksi, dan kecocokan kode SF dengan file Team Leader.</div>
+  </section>
+
+  <section class="guide-block" id="guide-gbk" data-guide-text="report GBK TL sf_code Team Leader Kode Process State Agency submit ekspor CSV XLSX salin tabel" >
+    <div class="guide-block-title"><span class="guide-number">03</span><div><h3>Report GBK - TL</h3><p>Untuk mencocokkan data SF dengan Team Leader dan meninjau hasil berdasarkan filter.</p></div></div>
+    <ol><li>Buka menu <strong>Report GBK - TL</strong>.</li><li>Unggah file Team Leader Excel yang berisi kolom <code>sf_code</code> dan <code>Team Leader</code>, lalu unggah file data detail CSV yang memiliki kolom <code>sf_code</code>.</li><li>Jika kode SF di file sumber masih bernama <code>Kode</code>, ubah nama kolom tersebut menjadi <code>sf_code</code> sebelum mengunggah.</li><li>Klik <strong>SUBMIT</strong> untuk memproses dan mencocokkan data.</li><li>Gunakan filter <strong>Process State</strong> dan <strong>Agency</strong> untuk mempersempit hasil, kemudian periksa tabel detail atau rekap TL/SF.</li><li>Gunakan fitur ekspor CSV/XLSX atau salin tabel jika ingin memakai hasil di tempat lain.</li></ol>
+    <div class="guide-callout"><strong>Jika nama TL kosong:</strong> pastikan kode SF di data transaksi sama formatnya dengan kode SF di file Team Leader—periksa spasi, ejaan, dan kolom yang digunakan.</div>
+  </section>
+
+  <section class="guide-block" id="guide-pca" data-guide-text="report PCA PCV PP CSV io_ts Pending Customer Verification Pending Contract Approval Pending Payment Lainnya Terapkan copy paste crop gambar" >
+    <div class="guide-block-title"><span class="guide-number">04</span><div><h3>Report PCA PCV PP</h3><p>Untuk memproses kategori pending dan menyusun gambar laporan gabungan.</p></div></div>
+    <ol><li>Buka menu <strong>Report PCA PCV PP</strong> dan unggah file CSV sumber.</li><li>Pastikan file memiliki kolom <code>io_ts</code>, karena kolom ini digunakan dalam proses pengolahan umur data.</li><li>Jalankan proses sesuai tombol yang tersedia, lalu periksa hasil kategori <strong>Pending Customer Verification (PCV)</strong>, <strong>Pending Contract Approval (PCA)</strong>, serta <strong>Pending Payment &amp; Lainnya (PP)</strong>.</li><li>Gunakan filter PCV/PCA sesuai kebutuhan. Untuk PP, pilih status yang diinginkan lalu tekan <strong>Terapkan</strong>.</li><li>Salin gambar/tabel kategori yang diperlukan, tempelkan ke area penyusunan laporan, lalu gunakan fungsi crop pada bagian PCV, PCA, dan PP.</li><li>Jalankan fungsi untuk membuat gambar laporan gabungan dan periksa hasil akhirnya sebelum dibagikan.</li></ol>
+    <div class="guide-callout"><strong>Perhatian:</strong> apabila hasil kosong atau umur data tidak muncul, periksa apakah kolom <code>io_ts</code> tersedia dan nilai tanggal/waktunya terbaca dengan benar.</div>
+  </section>
+
+  <section class="guide-block" id="guide-ioreps" data-guide-text="report IO RE PS TeamLeader xlsx xls IO RE PS CSV Generate Data Pivot sf_company_name perusahaan Team Leader pivot copy gambar" >
+    <div class="guide-block-title"><span class="guide-number">05</span><div><h3>Report IO RE PS</h3><p>Untuk membuat detail dan Pivot Table gabungan IO, RE, dan PS.</p></div></div>
+    <ol><li>Buka menu <strong>Report IO RE PS</strong>.</li><li>Unggah file <strong>TeamLeader</strong> berformat .xlsx/.xls dan file data <strong>IO</strong>, <strong>RE</strong>, serta <strong>PS</strong> berformat CSV pada input masing-masing.</li><li>Klik <strong>Generate Data &amp; Pivot</strong> dan tunggu sampai tabel detail serta pivot selesai dibuat.</li><li>Gunakan filter perusahaan berdasarkan <code>sf_company_name</code> untuk melihat data perusahaan yang diperlukan.</li><li>Sesuaikan filter Team Leader bila diperlukan. Untuk menampilkan keseluruhan data, gunakan pilihan kosong/semua sesuai kontrol yang tersedia.</li><li>Periksa tabel pivot IO, RE, dan PS. Gunakan tombol salin/copy gambar pada tabel jika ingin memasukkan hasil ke laporan.</li></ol>
+    <div class="guide-callout"><strong>Tips:</strong> jika data perusahaan tidak muncul, pastikan kolom <code>sf_company_name</code> ada pada sumber yang sesuai dan filter perusahaan tidak membatasi hasil secara tidak sengaja.</div>
+  </section>
+
+  <section class="guide-block" id="guide-trouble" data-guide-text="troubleshooting kendala upload file tidak terbaca hasil kosong tombol tidak berfungsi nama kolom CSV browser internet" >
+    <div class="guide-block-title"><span class="guide-number">06</span><div><h3>Solusi Kendala Umum</h3><p>Periksa poin-poin berikut sebelum mengulang proses.</p></div></div>
+    <div class="guide-faq">
+      <details><summary>File tidak bisa diunggah atau tidak terbaca</summary><p>Pastikan ekstensi sesuai dengan input (.xlsx/.xls atau .csv), file tidak rusak, dan Anda memilih input yang benar. Coba muat ulang halaman lalu unggah kembali.</p></details>
+      <details><summary>Tabel atau hasil perhitungan kosong</summary><p>Pastikan tombol proses/generate sudah dijalankan, rentang tanggal sesuai data, filter tidak terlalu sempit, dan file memang memiliki baris data.</p></details>
+      <details><summary>Nama Team Leader tidak muncul</summary><p>Periksa keberadaan kolom <code>sf_code</code> dan <code>Team Leader</code> pada file pemetaan serta pastikan nilai kode SF cocok dengan data transaksi.</p></details>
+      <details><summary>Filter tidak menampilkan data yang diharapkan</summary><p>Hapus atau longgarkan filter satu per satu. Pastikan ejaan nama perusahaan, Agency, Process State, Cluster, dan tanggal sesuai dengan isi sumber.</p></details>
+      <details><summary>Fitur salin gambar atau komponen tertentu gagal</summary><p>Coba gunakan browser desktop terbaru. Pastikan halaman sudah selesai memuat dan izinkan clipboard bila browser meminta izin. Jika tampilan pustaka tidak termuat, periksa koneksi internet.</p></details>
+    </div>
+  </section>
+
+  <div class="guide-end"><i data-lucide="lightbulb"></i><div><strong>Alur kerja yang disarankan</strong><p>Mulai dari file sumber yang benar → proses laporan → tinjau hasil dan filter → validasi beberapa baris secara manual → salin atau ekspor hasil. Jika hasil berbeda dari ekspektasi, periksa data sumber dan filter sebelum menyimpulkan bahwa rumus bermasalah.</p></div></div>
+</div>
+</section>
+
 </main>
 </div>
 <script>
@@ -6183,12 +6446,104 @@ function copyDashboardImage(){
 function resetAll(){location.reload()}
 refreshDates();
 
-/* ===== UI helpers: sidebar nav & theme (tampilan saja, tidak mengubah fungsi app) ===== */
+/* ===== UI helpers: sidebar navigation ===== */
 function toggleSidebar(force){
+ const desktop=window.matchMedia("(min-width: 1200px)").matches;
+ const toggle=document.querySelector(".topbar-toggle");
+ if(desktop){
+   // Desktop uses one control only: expanded sidebar <-> compact icon rail.
+   if(force===false) return; // Navigation must not unexpectedly expand/collapse the desktop sidebar.
+   toggleSidebarCollapse();
+   const collapsed=document.body.classList.contains("sidebar-collapsed");
+   if(toggle){
+     const label=toggle.querySelector(".toggle-label");
+     if(label) label.textContent=collapsed?"Perbesar sidebar":"Ciutkan sidebar";
+     toggle.setAttribute("aria-pressed",String(collapsed));
+     toggle.setAttribute("aria-expanded",String(!collapsed));
+     toggle.setAttribute("aria-label",collapsed?"Perbesar sidebar":"Ciutkan sidebar");
+     toggle.setAttribute("title","Toggle sidebar");
+   }
+   return;
+ }
  const open=typeof force==="boolean"?force:!document.body.classList.contains("sidebar-open");
  document.body.classList.toggle("sidebar-open",open);
+ if(toggle){
+   const label=toggle.querySelector(".toggle-label");
+   if(label) label.textContent=open?"Tutup menu":"Buka menu";
+   toggle.setAttribute("aria-expanded",String(open));
+   toggle.setAttribute("aria-label",open?"Tutup menu":"Buka menu");
+   toggle.setAttribute("title",open?"Tutup menu":"Buka menu");
+ }
 }
+function toggleSidebarCollapse(force){
+ if(!window.matchMedia("(min-width: 1200px)").matches) return;
+ const collapsed=typeof force==="boolean"?force:!document.body.classList.contains("sidebar-collapsed");
+ document.body.classList.toggle("sidebar-collapsed",collapsed);
+ const btn=document.querySelector(".topbar-toggle");
+ if(btn){
+   btn.setAttribute("aria-pressed",String(collapsed));
+   btn.setAttribute("aria-expanded",String(!collapsed));
+   btn.setAttribute("title","Toggle sidebar");
+   btn.setAttribute("aria-label",collapsed?"Perbesar sidebar":"Ciutkan sidebar");
+   const label=btn.querySelector(".toggle-label");
+   if(label) label.textContent=collapsed?"Perbesar sidebar":"Ciutkan sidebar";
+ }
+}
+function setupSidebarAccordion(){
+ const menu=document.querySelector("#sidebar .sidebar-menu");
+ if(!menu || menu.dataset.accordionReady==="true") return;
+ menu.dataset.accordionReady="true";
+ const titles=[...menu.querySelectorAll(":scope > .menu-title")];
+ const icons=['<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18v16H3z"/><path d="M9 4v16"/><path d="M13 8h4M13 12h4M13 16h4"/></svg>',
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>',
+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>'];
+ titles.forEach((title,index)=>{
+   const group=document.createElement('section'); group.className='sidebar-group';
+   const button=document.createElement('button'); button.type='button'; button.className='sidebar-group-toggle';
+   button.setAttribute('aria-expanded','false'); button.setAttribute('aria-controls','sidebar-group-panel-'+index);
+   const icon=document.createElement('span'); icon.className='group-icon'; icon.innerHTML=icons[index]||icons[0];
+   const label=document.createElement('span'); label.className='group-label'; label.textContent=title.textContent.trim();
+   const chevron=document.createElementNS('http://www.w3.org/2000/svg','svg'); chevron.setAttribute('viewBox','0 0 24 24'); chevron.setAttribute('fill','none'); chevron.setAttribute('stroke','currentColor'); chevron.setAttribute('stroke-width','2'); chevron.setAttribute('stroke-linecap','round'); chevron.setAttribute('stroke-linejoin','round'); chevron.classList.add('group-chevron'); chevron.innerHTML='<path d="m6 9 6 6 6-6"/>';
+   button.append(icon,label,chevron);
+   const panel=document.createElement('div'); panel.className='sidebar-group-panel'; panel.id='sidebar-group-panel-'+index; panel.hidden=true;
+   let node=title.nextSibling;
+   const after=title.nextElementSibling;
+   while(node && !(node.nodeType===1 && node.classList.contains('menu-title'))){const next=node.nextSibling; panel.appendChild(node); node=next;}
+   title.replaceWith(group); group.append(button,panel);
+   button.addEventListener('click',()=>{
+     const willOpen=button.getAttribute('aria-expanded')!=='true';
+     menu.querySelectorAll('.sidebar-group-toggle').forEach(other=>{if(other!==button){other.setAttribute('aria-expanded','false');const p=document.getElementById(other.getAttribute('aria-controls'));if(p)p.hidden=true;}});
+     button.setAttribute('aria-expanded',String(willOpen));panel.hidden=!willOpen;
+   });
+   // Make text labels explicit spans so collapsed mode can hide labels without hiding icons.
+   panel.querySelectorAll('.menu-item').forEach(item=>{
+     [...item.childNodes].forEach(child=>{
+       if(child.nodeType===3 && child.textContent.trim()){
+         const span=document.createElement('span');span.className='menu-label';span.textContent=child.textContent.trim();child.replaceWith(span);
+       }
+     });
+   });
+ });
+ // Open the first group by default; the rest can be expanded on demand.
+ const first=menu.querySelector('.sidebar-group-toggle');
+ if(first){first.setAttribute('aria-expanded','true');const panel=document.getElementById(first.getAttribute('aria-controls'));if(panel)panel.hidden=false;}
+}
+setupSidebarAccordion();
+window.addEventListener('resize',()=>{
+ const toggle=document.querySelector('.topbar-toggle');
+ if(window.matchMedia('(min-width: 1200px)').matches){
+   document.body.classList.remove('sidebar-open');
+   const collapsed=document.body.classList.contains('sidebar-collapsed');
+   if(toggle){toggle.setAttribute('aria-expanded',String(!collapsed));toggle.setAttribute('aria-pressed',String(collapsed));toggle.setAttribute('aria-label',collapsed?'Perbesar sidebar':'Ciutkan sidebar');toggle.title='Toggle sidebar';const label=toggle.querySelector('.toggle-label');if(label)label.textContent=collapsed?'Perbesar sidebar':'Ciutkan sidebar';}
+ } else {
+   document.body.classList.remove('sidebar-collapsed');
+   if(toggle){const open=document.body.classList.contains('sidebar-open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-pressed',String(open));toggle.setAttribute('aria-label',open?'Tutup menu':'Buka menu');toggle.title='Toggle sidebar';const label=toggle.querySelector('.toggle-label');if(label)label.textContent=open?'Tutup menu':'Buka menu';}
+ }
+});
+
 function navGo(el,id){
+ const parentPanel=el.closest('.sidebar-group-panel');
+ if(parentPanel){const group=parentPanel.closest('.sidebar-group');const btn=group&&group.querySelector('.sidebar-group-toggle');if(btn){document.querySelectorAll('.sidebar-group-toggle').forEach(other=>{if(other!==btn){other.setAttribute('aria-expanded','false');const p=document.getElementById(other.getAttribute('aria-controls'));if(p)p.hidden=true;}});btn.setAttribute('aria-expanded','true');parentPanel.hidden=false;}}
  document.querySelectorAll(".menu-item").forEach(x=>x.classList.remove("active"));
  el.classList.add("active");
  document.querySelectorAll(".report-page").forEach(x=>x.classList.remove("active"));
@@ -6197,13 +6552,32 @@ function navGo(el,id){
  if(t){t.scrollIntoView({behavior:"smooth",block:"start"});setTimeout(()=>toggleSidebar(false),350)}
 }
 
+
+function guideJump(id){
+ const target=document.getElementById(id);
+ if(target){target.scrollIntoView({behavior:'smooth',block:'start'});target.classList.add('guide-highlight');setTimeout(()=>target.classList.remove('guide-highlight'),900);}
+}
+function filterGuide(value){
+ const q=(value||'').toLowerCase().trim();
+ const blocks=[...document.querySelectorAll('#report-guide .guide-block')];
+ let visible=0;
+ blocks.forEach(block=>{const match=!q||((block.innerText+' '+(block.getAttribute('data-guide-text')||'')).toLowerCase().includes(q));block.hidden=!match;if(match)visible++;});
+ document.querySelectorAll('#guideQuickGrid .guide-quick').forEach(card=>{const target=card.getAttribute('onclick')||'';const id=(target.match(/guideJump\('([^']+)'\)/)||[])[1];const section=id&&document.getElementById(id);const match=!q||(section&&!section.hidden);card.hidden=!match;});
+ const empty=document.getElementById('guideEmpty');if(empty)empty.classList.toggle('show',visible===0);
+}
+
 function openReport(id,el){
+ const parentPanel=el&&el.closest('.sidebar-group-panel');
+ if(parentPanel){const group=parentPanel.closest('.sidebar-group');const btn=group&&group.querySelector('.sidebar-group-toggle');if(btn){document.querySelectorAll('.sidebar-group-toggle').forEach(other=>{if(other!==btn){other.setAttribute('aria-expanded','false');const p=document.getElementById(other.getAttribute('aria-controls'));if(p)p.hidden=true;}});btn.setAttribute('aria-expanded','true');parentPanel.hidden=false;}}
  document.querySelectorAll(".menu-item").forEach(x=>x.classList.remove("active"));
  if(el) el.classList.add("active");
  document.getElementById("homeArea").style.display="none";
  document.querySelectorAll(".report-page").forEach(x=>x.classList.remove("active"));
  const page=document.getElementById(id);
  if(page) page.classList.add("active");
+ const titleMap={"report-gbk":"Report GBK - TL","report-pca":"Report PCA PCV PP","report-ioreps":"Report IO RE PS","report-guide":"Panduan Penggunaan"};
+ const topTitle=document.querySelector(".topbar-title"); if(topTitle) topTitle.textContent=titleMap[id]||"Dashboard";
+ const topSub=document.querySelector(".topbar-sub"); if(topSub) topSub.textContent=id==="report-guide"?"Pusat bantuan dan tutorial aplikasi":"Perbandingan performansi sales";
  window.scrollTo({top:0,behavior:"instant"});
  toggleSidebar(false);
  if(window.lucide) lucide.createIcons();
